@@ -1,0 +1,73 @@
+/* Mise en forme globale du body */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Container du tableau - centrage et police globale */
+#table_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+/* Style du tableau */
+table {
+    border-collapse: collapse;
+    background-color: white;
+    width: auto;
+}
+
+/* Style des cellules th et td */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+thead th {
+    background-color: #0891D0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style des lignes du tbody */
+tbody tr {
+    background-color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* Classes pour les colonnes dans tbody */
+tbody .col_number {
+    text-align: center;
+    width: 80px;
+}
+
+tbody .col_text {
+    text-align: left;
+    min-width: 200px;
+    padding-left: 20px;
+}
+
+tbody .col_chkbox {
+    text-align: center;
+    width: 100px;
+}
+
+/* Style des checkboxes */
+.col_chkbox input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}

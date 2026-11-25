@@ -1,0 +1,107 @@
+body {
+  font-family: Calibri, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#table_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 50vh;
+}
+
+.table-wrapper {
+  display: inline-block;
+}
+
+/* --- FORMULAIRE --- */
+#form_container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0; 
+  margin-bottom: 0; 
+  border-bottom: none; 
+}
+
+.form_group {
+  display: flex;
+  align-items: center;
+}
+
+.form_label {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.form_field {
+  padding: 4px 6px;
+  font-size: 14px;
+  width: 130px;
+  margin-left: 5px;
+}
+
+#btnAdd {
+  margin-left: 5px;
+}
+
+/* --- TABLEAU --- */
+table {
+  border-collapse: collapse;
+  background-color: white;
+  border-top: none; 
+    margin-bottom: 3px; 
+
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+thead th {
+  background-color: #0891D0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Colonnes */
+tbody .col_number { text-align: center; width: 80px; }
+tbody .col_text { text-align: left; min-width: 200px; padding-left: 25px; }
+tbody .col_chkbox { text-align: center; width: 100px; }
+.col_chkbox input[type="checkbox"] { width: 15px; height: 15px; cursor: pointer; }
+
+/* Résumé */
+#container_summary {
+  margin-top: 0;
+  margin-top: 3px; 
+  padding: 6px 12px;
+  background: rgba(240, 240, 240, 0.6);
+  border: 1px solid rgba(137, 153, 180, 0.159);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+#container_summary p {
+  margin: 0;
+  font-weight: normal;
+  color: #222;
+}
+#p3 {
+  justify-self: end;
+  padding-right: 160px;
+}
+
+/* Boutons */
+.btn-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}

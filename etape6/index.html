@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étape 6 - Suppression</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulaire -->
+        <div class="form-container">
+            <div class="form-group">
+                <span class="form-label">Nom:</span>
+                <input type="text" class="form-input" id="form_nom">
+            </div>
+            <div class="form-group">
+                <span class="form-label">Prénom:</span>
+                <input type="text" class="form-input" id="form_prenom">
+            </div>
+            <div class="form-group">
+                <span class="form-label">Points:</span>
+                <input type="text" class="form-input" id="form_points">
+            </div>
+            <button id="btnAdd" class="btn btn-add">Ajouter</button>
+        </div>
+
+        <!-- Tableau -->
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Points</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Les données seront insérées ici par JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Résumé -->
+        <div class="summary">
+            <span id="lineCount">0 ligne(s)</span>
+            <span id="totalPoints">Total point(s)= 0</span>
+        </div>
+
+        <!-- Boutons -->
+        <div class="buttons-container">
+            <button id="btnConsole" class="btn btn-console">Console Tableau</button>
+            <button id="btnDelete" class="btn btn-delete">Supprimer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

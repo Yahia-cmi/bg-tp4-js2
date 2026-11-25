@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Etape 5 - Insertion via des champs de saisie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="table_container">
+    <div class="table-wrapper">
+
+      <!-- Formulaire d’ajout -->
+      <div id="form_container">
+        <div class="form_group">
+          <label class="form_label" for="form_nom">Nom:</label>
+          <input type="text" id="form_nom" class="form_field" />
+        </div>
+        <div class="form_group">
+          <label class="form_label" for="form_prenom">Prénom:</label>
+          <input type="text" id="form_prenom" class="form_field" />
+        </div>
+        <div class="form_group">
+          <label class="form_label" for="form_points">Points:</label>
+          <input type="number" id="form_points" class="form_field" />
+        </div>
+        <button id="btnAdd">Ajouter</button>
+      </div>
+
+      <!-- Tableau -->
+      <table border="1">
+        <thead>
+          <tr>
+            <th class="col_number">N°</th>
+            <th class="col_text">Nom</th>
+            <th class="col_text">Prénom</th>
+            <th class="col_number">Points</th>
+            <th class="col_chkbox">Select</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rempli par JS -->
+        </tbody>
+      </table>
+
+      <!-- Résumé -->
+      <div id="container_summary">
+        <p id="p1">0 ligne(s)</p>
+        <p id="p3">Total point(s)= 0</p>
+      </div>
+
+      <!-- Bouton console -->
+      <div class="btn-row">
+        <button id="btnConsole">Console Tableau</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
